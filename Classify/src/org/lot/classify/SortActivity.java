@@ -24,9 +24,10 @@ public class SortActivity extends Activity {
 		group2 = (TextView) findViewById(R.id.outputGroup2);
 		
 		Intent intent = getIntent();
-		String nameList = intent.getStringExtra("names");
-		group1.setText(nameList);
-		group2.setText(nameList);
+		String group1String = intent.getStringExtra("group1");
+		String group2String = intent.getStringExtra("group2");
+		group1.setText(group1String);
+		group2.setText(group2String);
 		
 		
 	}
